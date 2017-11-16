@@ -2,3 +2,76 @@ html {
   background: #f2f1f4;
   color: #19171c;
 }
+
+.accordion {
+  width: 400px;
+}
+
+.accordion .title:nth-child(2), .accordion .title:nth-child(6) {
+background-color:rgba(192,192,192,0.3);
+}
+
+.accordion .title:nth-child(2):hover, .accordion .title:nth-child(6):hover {
+background-color:rgba(192,192,192,0.6);
+cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto;
+}
+§
+.accordion .title:nth-child(4) {
+  background-color:rgba(255,255,0,0.3);;
+}
+
+.accordion .title:nth-child(4):hover {
+  background-color:yellow;
+  cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto;
+}
+
+.description {
+  display: none;
+}
+
+.title {
+  padding: 30px;
+  padding-left: 50px;
+  font-size: 24px;
+  /*background-image: url(http://weclipart.com/gimg/B37D47401CB4A3F4/y9izE5EcE.png);*/
+  background-position: right;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.title::before {
+    content: "\f055";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: red;
+    font-size: 30px;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    position: absolute;
+    top: 33%;
+    left: 0;
+}
+
+.active + .description{
+    display: block;
+}
+
+.active.title::before {
+    content: "\f056";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 18px;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    position: absolute;
+    top: 0.4em;
+    left: 0;
+
+    /*.active{
+  background-image: url(https://www.emojibase.com/resources/img/emojis/hangouts/2796.png);
+}*/
