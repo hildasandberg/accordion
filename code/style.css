@@ -5,6 +5,7 @@ html {
 
 .accordion {
   width: 400px;
+  font-family: sans-serif;
 }
 
 .accordion .title:nth-child(2), .accordion .title:nth-child(6) {
