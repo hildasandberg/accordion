@@ -65,11 +65,11 @@ cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png"), auto
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-    font-size: 18px;
+    font-size: 30px;
     padding-right: 0.5em;
     padding-left: 0.5em;
     position: absolute;
-    top: 0.4em;
+    top: 33%;
     left: 0;
 
     /*.active{
